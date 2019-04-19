@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            margin: 10px;
+            transition: display 1s ease-out;
+        }
+        .boxes{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px;
+        }
+        #winLabel,#rgbCode{
+            width: 50%;
+            margin:10px auto;
+            padding: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1 id="winLabel">Guess The Color In RGB Code</h1>
+    <h1 id="rgbCode"></h1>
+    <hr>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <script src="rgb.js"></script>
+</body>
+</html>
